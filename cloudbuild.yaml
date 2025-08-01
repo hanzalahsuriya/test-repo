@@ -9,3 +9,5 @@ steps:
     - '--project='
     # This flag tells gcloud to use the impersonated account's credentials
     - '--impersonate-service-account=deployment-sa@.iam.gserviceaccount.com'
+options:
+  logging: CLOUD_LOGGING_ONLY
