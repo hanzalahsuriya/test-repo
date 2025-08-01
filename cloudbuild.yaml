@@ -1,4 +1,4 @@
-# cloudbuild.yaml (Corrected Version)
+# cloudbuild.yaml
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'gcloud'
@@ -6,7 +6,7 @@ steps:
     - 'compute'
     - 'instances'
     - 'list'
-    - '--project=YOUR_PROD_PROJECT_ID'
+    - '--project=carbide-pilot-330923'
     # This flag tells gcloud to use the impersonated account's credentials
     - '--impersonate-service-account=deployment-sa@carbide-pilot-330923.iam.gserviceaccount.com'
 # Add this options block to specify the logging mode
